@@ -1,4 +1,4 @@
-# 🏗️ NirmanSathi
+# NirmanSathi
 
 > **A National Digital Construction Governance & Marketplace Platform for Nepal**
 
@@ -8,7 +8,7 @@ The platform enables municipalities across Nepal to manage construction-related 
 
 ---
 
-## 🎯 Project Objectives
+## Project Objectives
 
 - Digitize residential building permit workflows.
 - Improve transparency in municipal approval processes.
@@ -19,9 +19,9 @@ The platform enables municipalities across Nepal to manage construction-related 
 
 ---
 
-## ✨ Core Features
+## Core Features
 
-### 🏛️ E-Governance Module
+### E-Governance Module
 
 - Building Permit Application
 - Renovation Permit
@@ -31,7 +31,7 @@ The platform enables municipalities across Nepal to manage construction-related 
 - Digital Document Submission
 - Complaint Management
 
-### 🛒 Construction Marketplace
+### Construction Marketplace
 
 - Architect Marketplace
 - Contractor Marketplace
@@ -44,7 +44,7 @@ The platform enables municipalities across Nepal to manage construction-related 
 
 ---
 
-## 👥 System Users
+## System Users
 
 - Citizen
 - Municipality Officer
@@ -57,7 +57,7 @@ The platform enables municipalities across Nepal to manage construction-related 
 
 ---
 
-## 🛠️ Technology Stack
+## Technology Stack
 
 | Category | Technology |
 |----------|------------|
@@ -71,7 +71,7 @@ The platform enables municipalities across Nepal to manage construction-related 
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```text
 NirmanSathi/
@@ -87,7 +87,7 @@ NirmanSathi/
 
 ---
 
-## 🚀 Development Roadmap
+## Development Roadmap
 
 This project follows the **Software Development Life Cycle (SDLC)**.
 
@@ -105,7 +105,7 @@ This project follows the **Software Development Life Cycle (SDLC)**.
 
 ---
 
-## 📌 Current Status
+## Current Status
 
 **Phase 1 — Project Planning & Requirement Analysis**
 
@@ -123,7 +123,7 @@ Current progress includes:
 
 ---
 
-## 🎓 Academic Information
+## Academic Information
 
 This project is being developed as a **BCS CSIT Semester Project** for the **E-Governance** course.
 
@@ -131,15 +131,15 @@ The development follows professional software engineering practices, emphasizing
 
 ---
 
-## 📜 License
+## License
 
 This project is licensed under the **MIT License**.
 
 ---
 
-## 👨‍💻 Developer
+## Developer
 
-**Binit**
+**Binit Kumar Singh Alkesh Chaudhary Prince Upadhaya**
 
 BCS CSIT Student
 
