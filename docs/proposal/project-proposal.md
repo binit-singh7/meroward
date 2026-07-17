@@ -2,7 +2,7 @@
 
 ## NirmanSathi
 
-## A Digital Residential Construction Governance & Marketplace Platform for Nepal
+## An Integrated Residential Construction Governance & Marketplace Platform for Nepal
 
 ## Submitted By
 
@@ -69,7 +69,7 @@
 
 The construction approval process in Nepal is still largely dependent on manual procedures involving physical document submission, multiple visits to municipal offices, and limited transparency in application tracking. Citizens are also required to search independently for architects, contractors, suppliers, and equipment providers, resulting in a fragmented construction experience.
 
-NirmanSathi is proposed as a centralized web-based platform that functions as an integrated residential construction ecosystem by combining digital construction governance with a construction marketplace. The system enables citizens to submit building permit applications online, upload required documents, monitor application progress, request inspections, and obtain digital certificates through a transparent workflow. At the same time, it connects citizens with verified architects, contractors, suppliers, and equipment rental providers within a single platform.
+NirmanSathi is proposed as a centralized web-based platform that integrates digital residential construction governance with a construction material marketplace. The current implementation enables citizens to submit building permit applications, upload required documents, track application status, and purchase construction materials using a simulated eSewa payment workflow. Future versions are envisioned to include architect and contractor marketplaces, equipment rental services, inspections, and digital certificate management.
 
 The proposed system is designed for use by municipalities across Nepal using a shared platform while ensuring that each municipality manages only its own administrative data. This approach promotes transparency, efficiency, accountability, and improved service delivery in residential construction management.
 
@@ -85,7 +85,9 @@ Despite the increasing adoption of digital technologies in public administration
 
 In addition to administrative challenges, individuals planning construction projects frequently struggle to find reliable architects, contractors, construction material suppliers, and equipment rental providers. These services are usually scattered across different platforms or rely heavily on personal networks and recommendations, making the overall construction process inefficient and difficult to manage.
 
-To address these challenges, this project proposes **NirmanSathi**, a centralized web-based platform that combines digital construction governance with a construction marketplace. The system allows citizens to apply for building permits online, upload required documents, monitor application progress, request inspections, and receive digital certificates. Furthermore, it provides a trusted marketplace where verified professionals and suppliers can offer their services and products.
+To address these challenges, this project proposes **NirmanSathi**, a centralized web-based platform that integrates digital residential construction governance with a construction material marketplace. The current implementation allows citizens to apply for building permits online, upload required documents, monitor application status, and purchase construction materials using a simulated eSewa payment workflow. The platform is designed with a modular architecture that allows future versions to incorporate additional services such as architect and contractor marketplaces, equipment rental, construction inspections, and digital certificate management.
+
+The platform is designed to support municipalities throughout Nepal using a shared system architecture while ensuring that each municipality manages only its own administrative data. By integrating governance services and marketplace functionalities into a single platform, NirmanSathi aims to improve service delivery, increase transparency, reduce administrative workload, and simplify the overall residential construction process.
 
 The platform is designed to support municipalities throughout Nepal using a shared system architecture while ensuring that each municipality manages only its own administrative data. By integrating governance services and marketplace functionalities into a single platform, NirmanSathi aims to improve service delivery, increase transparency, reduce administrative workload, and simplify the overall residential construction process.
 
@@ -161,11 +163,11 @@ The specific objectives of the proposed system are:
 - To facilitate digital document submission and verification.
 - To support municipal officers and engineers in reviewing and approving applications efficiently.
 - To maintain municipality-specific data while operating on a centralized platform.
-- To provide an online marketplace for verified construction professionals, material suppliers, and equipment rental providers.
-- To simplify the discovery and purchase of construction materials through an online marketplace.
+- To provide an online construction material marketplace with a simulated e-commerce purchasing workflow.
+- To simplify the discovery, ordering, and purchase of construction materials through a centralized marketplace.
 - To create a unified digital ecosystem that supports the complete residential construction lifecycle.
-- To enable citizens to discover verified construction professionals through a centralized platform.
-- To improve collaboration among municipalities, professionals, suppliers, and citizens.
+- To support secure shopping cart management and simulated eSewa payment processing.
+- To develop a scalable platform capable of supporting additional construction service marketplaces in future versions.
 - To promote transparency and accountability throughout residential construction projects.
 - To develop a scalable platform that can be adopted by municipalities across Nepal while maintaining municipality-specific administrative data.
 
@@ -174,6 +176,8 @@ The specific objectives of the proposed system are:
 The scope of NirmanSathi is limited to residential construction management within municipalities of Nepal. The system focuses on digitizing construction approval workflows while providing an integrated marketplace for construction-related services.
 
 The project includes the following major areas:
+
+The following scope represents the complete conceptual vision of NirmanSathi. Due to the limited duration of the semester project, only selected modules are implemented in the current version. The detailed implementation scope is presented later in this proposal.
 
 ### E-Governance
 
@@ -226,40 +230,31 @@ The proposed system covers the following functional areas:
 - Dashboard and Reporting
 - Notification Management
 
-## Implementation Scope
+# 8. Implementation Scope
 
-NirmanSathi is envisioned as a comprehensive residential construction governance and marketplace platform. However, considering the scope and timeline of a semester project, the implementation will follow an incremental development approach. The current project focuses on developing and demonstrating the core functionalities of the system while designing the remaining modules for future expansion.
+NirmanSathi is envisioned as a comprehensive residential construction governance and marketplace platform. However, considering the academic nature of this project and the available development timeline, the current implementation focuses on the core functionalities required to demonstrate the integration of e-governance and e-commerce.
 
-### Modules to be Fully Implemented
+The implemented features include:
 
-The following modules will be completely developed and demonstrated:
+## E-Governance
 
 - User Authentication and Role-Based Access Control
 - Citizen Registration and Profile Management
-- Municipality, District, Province, and Ward Management
+- Province, District, Municipality, and Ward Management
 - Building Permit Application
-- Blueprint Upload and Management
-- Permit Review Workflow
+- Document Upload
+- Permit Review and Approval Workflow
 - Application Status Tracking
-- Municipality Dashboard
+
+## E-Commerce
+
 - Construction Material Marketplace
+- Product Category Management
 - Shopping Cart
 - Simulated eSewa Payment Workflow
-- Complaint Management
-- Notification System
+- Order History
 
-### Modules to be Partially Implemented
-
-The following modules will include database design, user interfaces, and basic workflows but may contain simplified business logic:
-
-- Construction Professional Directory (Architects & Contractors)
-- Equipment Rental Services
-- Quotation Request System
-- Completion & Occupancy Certificate Issuance
-
-### Future Implementation
-
-Advanced features such as GIS integration, AI-assisted blueprint validation, real payment gateway integration, drone-based inspections, SMS services, and mobile applications are reserved for future versions of the system.
+The modules listed above represent the complete implementation scope of the current academic project. All remaining features described elsewhere in this proposal illustrate the long-term vision of NirmanSathi and are intentionally excluded from the current implementation due to the project's limited duration.
 
 ## Assumptions
 
@@ -274,7 +269,7 @@ The proposed system is developed based on the following assumptions:
 
 ## Stakeholders
 
-The successful implementation and operation of NirmanSathi involves multiple stakeholders, each with distinct roles and responsibilities.
+The current implementation primarily involves Citizens, Municipality Officers, Construction Material Suppliers, and System Administrators. Additional stakeholders such as Architects, Contractors, and Equipment Rental Providers are part of the platform's long-term vision and are not included in the current implementation.
 
 ### Primary Stakeholders
 
@@ -320,7 +315,7 @@ The platform consists of four major functional components that work together to 
 
 ### Authentication and User Management
 
-This module manages user registration, authentication, role-based authorization, and profile management. Different user roles such as Citizens, Municipal Officers, Engineers, Verified Architects, Verified Contractors, Construction Material Suppliers, Verified Equipment Rental Providers, and System Administrators are provided with dedicated dashboards and permissions according to their responsibilities.
+This module manages user registration, authentication, role-based authorization, and profile management. Different user roles such as Citizens, Municipality Officers, Construction Material Suppliers, and System Administrators are provided with dedicated dashboards and permissions according to their responsibilities.
 
 ### E-Governance Module
 
@@ -335,18 +330,15 @@ This module digitizes residential construction approval workflows, including:
 
 ### Construction Marketplace
 
-The marketplace connects citizens with verified construction professionals and suppliers.
+The current implementation of the marketplace focuses on construction material purchasing through an integrated e-commerce module. Citizens can browse available products, add items to a shopping cart, place orders, and complete purchases using a simulated eSewa payment workflow. The modular architecture also allows future expansion to include architect and contractor marketplaces, equipment rental services, and quotation management.
 
-Services include:
+The marketplace currently includes:
 
-- Construction Professional Marketplace (Architects & Contractors)
-- Construction Material Store
-- Equipment Rental
-- Quotation Requests
+- Construction Material Marketplace
+- Product Category Management
+- Shopping Cart
 - Order Management
-- Simulated Digital Payment (eSewa)
-
-The integration of these two components enables citizens to complete their entire residential construction journey using a single platform.
+- Simulated eSewa Payment Workflow
 
 ### Administration Module
 
@@ -370,7 +362,7 @@ The proposed system will be developed using modern web technologies to ensure sc
 | Documentation           | Markdown                             |
 | UI Design               | Figma                                |
 | Development Environment | Visual Studio Code                   |
-| Deployment (Future)     | Render / Railway                     |
+| Deployment (Future)     | Render                               |
 
 The selected technology stack provides rapid development, strong community support, secure authentication mechanisms, and efficient database management suitable for large-scale web applications.
 **Payment Integration:** Simulated eSewa payment workflow (demonstration only)
@@ -508,9 +500,9 @@ Although developed as a semester project, NirmanSathi follows professional softw
 2. Ministry of Federal Affairs and General Administration (MoFAGA), Nepal.
 3. Department of Urban Development and Building Construction (DUDBC). _Nepal National Building Code (NBC)_.
 4. Local Government Operation Act, 2017, Government of Nepal.
-5. Django Software Foundation. _Django Documentation_. https://docs.djangoproject.com/
-6. PostgreSQL Global Development Group. _PostgreSQL Documentation_. https://www.postgresql.org/docs/
-7. Bootstrap Team. _Bootstrap Documentation_. https://getbootstrap.com/docs/
+5. Django Software Foundation. _Django Documentation_. <https://docs.djangoproject.com/>
+6. PostgreSQL Global Development Group. _PostgreSQL Documentation_. <https://www.postgresql.org/docs/>
+7. Bootstrap Team. _Bootstrap Documentation_. <https://getbootstrap.com/docs/>
 8. Sommerville, I. _Software Engineering_. 10th Edition.
 9. Pressman, R. S., & Maxim, B. R. _Software Engineering: A Practitioner's Approach_. 9th Edition.
 10. Electronic Building Permit System (e-BPS), Nepal (reference for existing municipal permit management systems).
