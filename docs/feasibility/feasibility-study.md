@@ -81,9 +81,9 @@ This feasibility study evaluates whether the proposed system can be successfully
 
 NirmanSathi is a web-based platform designed to simplify and modernize the residential construction process in Nepal. The system integrates municipal construction approval services with a digital construction marketplace, allowing citizens to manage the entire residential construction lifecycle through a single platform.
 
-The governance component of the system focuses on digitizing the building permit process by enabling online application submission, blueprint upload, permit review, inspection management, application tracking, complaint registration, and certificate issuance. These services reduce dependency on manual paperwork while improving transparency and communication between citizens and municipal authorities.
+The governance component of the system focuses on digitizing the building permit process by enabling online application submission, document upload, permit review, approval workflow, and application status tracking. These services reduce dependency on manual paperwork while improving transparency and communication between citizens and municipal authorities. These services reduce dependency on manual paperwork while improving transparency and communication between citizens and municipal authorities.
 
-The marketplace component complements the governance services by providing access to verified architects, contractors, construction material suppliers, and equipment rental providers. Citizens can browse construction materials, request professional services, place marketplace orders, and complete purchases using a simulated eSewa payment workflow. This integrated approach eliminates the need to use multiple independent systems during residential construction projects.
+The marketplace component complements the governance services by providing access to construction material suppliers through a digital marketplace. Citizens can browse products, add items to a shopping cart, and complete purchases using a simulated eSewa payment workflow. Additional marketplace services such as architect consultation, contractor hiring, and equipment rental are planned for future versions. Citizens can browse construction materials, request professional services, place marketplace orders, and complete purchases using a simulated eSewa payment workflow. This integrated approach eliminates the need to use multiple independent systems during residential construction projects.
 
 The platform follows a multi-municipality architecture in which multiple municipalities can operate independently using the same software while maintaining complete separation of administrative data. This design promotes scalability, maintainability, and future adoption by local governments across Nepal.
 
@@ -95,10 +95,10 @@ The specific objectives are:
 
 - To evaluate the technical feasibility of developing the system using Django, PostgreSQL, HTML, CSS, Bootstrap, and JavaScript.
 - To assess whether the project can be completed within the available academic timeline and available development resources.
-- To examine the operational feasibility of integrating digital governance services with a residential construction marketplace.
+- To examine the operational feasibility of integrating a building permit management system with a construction material marketplace.
 - To evaluate the economic feasibility of developing the project using open-source technologies and minimal financial resources.
 - To identify legal and regulatory considerations related to digital governance and residential construction management in Nepal.
-- To analyze organizational factors affecting the adoption of the proposed system by municipalities and construction stakeholders.
+- To analyze the ability of municipalities and citizens to adopt the proposed digital workflow.
 - To identify potential project risks and recommend appropriate mitigation strategies.
 - To determine whether the proposed system provides sufficient academic value while addressing practical challenges in residential construction governance.
 
@@ -110,7 +110,7 @@ NirmanSathi is considered technically feasible because it utilizes modern, open-
 
 The backend of the system will be developed using the Django web framework with Python 3.x. Django follows the Model-View-Template (MVT) architecture and provides built-in features such as authentication, authorization, ORM (Object Relational Mapping), security mechanisms, and administrative interfaces. These capabilities reduce development time while promoting secure and maintainable software design.
 
-PostgreSQL will be used as the database management system because of its reliability, performance, and support for complex relational data. Since NirmanSathi involves multiple user roles, permit workflows, marketplace transactions, and municipality-specific records, PostgreSQL provides an efficient platform for managing structured data.
+PostgreSQL will be used as the database management system because of its reliability, performance, and support for complex relational data. Since NirmanSathi involves role-based access control, building permit applications, and marketplace transactions, PostgreSQL provides an efficient platform for managing structured relational data.
 
 The frontend will be developed using HTML, CSS, Bootstrap, and JavaScript to create responsive and user-friendly interfaces that are compatible with modern web browsers. Bootstrap simplifies responsive design while JavaScript enables interactive user experiences.
 
@@ -126,9 +126,9 @@ Operational feasibility evaluates whether the proposed system can effectively su
 
 NirmanSathi is designed to improve the residential construction process by replacing paper-based administrative procedures with a centralized digital platform. The proposed workflow closely follows existing municipal permit approval procedures while simplifying document submission, communication, and application tracking.
 
-Citizens will be able to submit permit applications online, upload required documents, monitor application progress, register complaints, and access construction-related services without repeatedly visiting municipal offices. Municipal officers and engineers will review applications, verify submitted documents, conduct inspections, and update application statuses through dedicated dashboards.
+Citizens will be able to submit permit applications online, upload required documents, monitor application progress, register complaints, and access construction-related services without repeatedly visiting municipal offices.Municipality officers will review submitted permit applications, verify uploaded documents, approve or reject applications, and update their status through an administrative dashboard.
 
-The marketplace component extends the operational value of the platform by allowing verified architects, contractors, construction material suppliers, and equipment rental providers to offer their services through the same system. This reduces fragmentation by enabling citizens to complete multiple construction-related activities from one platform.
+The marketplace enables citizens to purchase construction materials from registered suppliers without leaving the platform. This integration demonstrates the combination of e-governance and e-commerce within a single web application. This reduces fragmentation by enabling citizens to complete multiple construction-related activities from one platform.
 
 Since the proposed workflow closely aligns with existing administrative practices while digitizing manual processes, minimal changes to municipal operations would be required. Basic training would enable municipal staff to effectively operate the system.
 
@@ -156,7 +156,7 @@ NirmanSathi is planned as a semester project with an estimated development durat
 
 The project development process follows the Software Development Life Cycle (SDLC), beginning with project planning and documentation, followed by requirement analysis, system design, implementation, testing, deployment, and final presentation.
 
-To ensure successful project completion, the development team will focus on implementing the essential modules required to demonstrate the complete residential construction workflow. Features such as GIS integration, AI-assisted blueprint validation, mobile applications, and real payment gateway integration have been intentionally excluded from the current implementation due to time constraints.
+To ensure successful project completion, the development team will focus on implementing the core building permit workflow and a construction material marketplace. Additional features have been intentionally deferred to future versions to maintain a realistic implementation scope. Features such as GIS integration, AI-assisted blueprint validation, mobile applications, and real payment gateway integration have been intentionally excluded from the current implementation due to time constraints.
 
 Regular progress reviews, version control using GitHub, and milestone-based development will be adopted to monitor project progress and minimize delays.
 
@@ -180,7 +180,7 @@ Therefore, the proposed system does not conflict with existing legal or regulato
 
 Organizational feasibility evaluates whether the intended users and participating organizations are capable of adopting and operating the proposed system.
 
-The primary users of NirmanSathi include citizens, municipal officers, municipal engineers, architects, contractors, construction material suppliers, equipment rental providers, and system administrators. Each user category is provided with role-specific functionalities designed to support their respective responsibilities within the residential construction process.
+The primary users of the implemented system include citizens, municipality officers, construction material suppliers, and system administrators. Other stakeholders such as architects, contractors, and equipment rental providers remain part of the project's long-term vision and future scope. Each user category is provided with role-specific functionalities designed to support their respective responsibilities within the residential construction process.
 
 The proposed system closely follows the existing workflow used by municipalities for processing residential building permits. As a result, adoption of the system would require only moderate procedural adjustments rather than complete organizational restructuring.
 
@@ -212,7 +212,7 @@ To minimize project risks, NirmanSathi will be developed using an incremental an
 
 Git and GitHub will be used throughout the project to maintain version history, facilitate collaboration, and prevent accidental loss of source code. Regular progress reviews and milestone-based development will help monitor project completion according to the planned schedule.
 
-The project scope has been intentionally limited to residential construction and prioritized around core governance and marketplace features. Advanced functionalities such as AI-assisted blueprint validation, GIS integration, and real payment gateway integration have been deferred to future versions to ensure successful completion within the academic timeline.
+The project scope has been intentionally limited to the core building permit workflow and construction material marketplace. Advanced features such as architect services, contractor management, equipment rental, AI-assisted blueprint validation, GIS integration, and real payment gateway integration have been deferred to future versions.
 
 Continuous testing during development will help identify defects early and improve overall software quality before final deployment.
 
@@ -223,6 +223,28 @@ The feasibility assessment indicates that NirmanSathi is a practical and achieva
 The project demonstrates strong technical feasibility through the use of Django, PostgreSQL, Bootstrap, JavaScript, and GitHub. Operational feasibility is supported by aligning the system with existing municipal workflows while simplifying the residential construction process for citizens. Economic feasibility is achieved through the use of freely available development tools and minimal implementation costs. Schedule feasibility is maintained by prioritizing core functionalities and limiting advanced features to future development. Legal and organizational feasibility are also satisfied by aligning the project with Nepal's digital transformation initiatives while maintaining a scalable multi-municipality architecture.
 
 Overall, the feasibility study concludes that NirmanSathi is technically, operationally, economically, legally, organizationally, and practically feasible for development as an academic project.
+
+# Current Implementation Scope
+
+The current implementation of NirmanSathi focuses on demonstrating the integration of e-governance and e-commerce through two core components:
+
+### E-Governance
+
+- User Authentication
+- Citizen Registration
+- Building Permit Application
+- Document Upload
+- Permit Approval Workflow
+- Application Status Tracking
+
+### E-Commerce
+
+- Construction Material Marketplace
+- Shopping Cart
+- Simulated eSewa Payment
+- Order Management
+
+This implementation scope has been intentionally defined to ensure successful completion within the available academic timeline. Additional features described throughout the project documentation represent the long-term vision of the platform.
 
 # Conclusion
 
@@ -245,7 +267,7 @@ As a result, NirmanSathi is considered a feasible academic project that effectiv
 
 # Overall Recommendation
 
-Based on the technical, operational, economic, legal, organizational, and schedule evaluations, the development team recommends proceeding with the implementation of NirmanSathi. The project is considered feasible for academic development and provides a strong foundation for future enhancement into a comprehensive residential construction governance platform.
+Based on the technical, operational, economic, legal, organizational, and schedule evaluations, the development team recommends proceeding with the implementation of NirmanSathi. The project is considered feasible for academic development and provides a strong foundation for future enhancement into a comprehensive residential construction governance and marketplace platform.
 
 # References
 
